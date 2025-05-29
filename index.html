@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="one">
+            <div class="nav-logo border">
+                <div class="logo">
+                    <div class="mam">
+                        ONMKT
+                        <p class="log" style="text-align: center;"> <i class="fa-solid fa-arrow-trend-up"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>ALL</option>
+                    <option> toys </option>
+                    <option>Cloth's </option>
+                    <option>Electronics </option>
+                    <option>Smartphone </option>
+                    <option>kitchen's</option>
+                    <option>Accessories</option>
+
+                    <input type="text" id="SearchBox" placeholder="Search amazon" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </select>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="return border">
+                <p><span>Return</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Card</p>
+                <p>Sell</p>
+            </div>
+
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-message">
+            <p>You are on Onmkt.com. You can also shop on Onmkt India for millions of products with fast local delivery.
+                <a>Click here to go to Onmkt.in</a>
+            </p>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                    <h2>Get your game on</h2>
+                <div class="box-image" style="background-image: url('game.png');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn" class="btn1" onclick="changeText()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Gift hampers</h2>
+                <div class="box-image" style="background-image: url('gift.png');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn1" class="btn1" onclick="changeText1()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Cloth</h2>
+                <div class="box-image" style="background-image: url('cloth.jpg');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn2" class="btn1" onclick="changeText2()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Toys under ₹500</h2>
+                <div class="box-image" style="background-image: url('toys.png');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn3" class="btn1" onclick="changeText3()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Health Care Products</h2>
+                <div class="box-image" style="background-image: url('health.png');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn4" class="btn1" onclick="changeText4()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Kitchen appliances</h2>
+                <div class="box-image" style="background-image: url('kitchen.jpg');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn5" class="btn1" onclick="changeText5()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Accessories</h2>
+                <div class="box-image" style="background-image: url('acc.jpg');"></div>
+                <p>See more</p>
+                <div class="btnn">
+                    <button onclick="addToCart()" class="btn">Add to cart</button>
+                    <button id="buybtn6" class="btn1" onclick="changeText6()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Smartphone<h2>
+                        <div class="box-image" style="background-image: url('smart.jpg');"></div>
+                        <p style="font-size:1rem; color: #6679f8 ;">See more</p>
+                        <div class="btnn">
+                            <button onclick="addToCart()" class="btn">Add to cart</button>
+                            <button id="buybtn7" class="btn1" onclick="changeText7()">Buy Now</button>
+                        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks<h2>
+                        <div class="box-image" style="background-image: url('bea.jpg');"></div>
+                        <p style="font-size:1rem; color: #6679f8 ;">See more</p>
+                        <div class="btnn">
+                            <button onclick="addToCart()" class="btn">Add to cart</button>
+                            <button id="buybtn8" class="btn1" onclick="changeText8()">Buy Now</button>
+                        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Headphones<h2>
+                        <div class="box-image" style="background-image: url('download2.jpg');"></div>
+                        <p style="font-size:1rem; color: #6679f8 ;">See more</p>
+                        <div class="btnn">
+                            <button onclick="addToCart()" class="btn">Add to cart</button>
+                            <button id="buybtn9" class="btn1" onclick="changeText9()">Buy Now</button>
+                        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture<h2>
+                        <div class="box-image" style="background-image: url('fur.jpg');"></div>
+                        <p style="font-size:1rem; color: #6679f8 ;">See more</p>
+                        <div class="btnn">
+                            <button onclick="addToCart()" class="btn">Add to cart</button>
+                            <button id="buybtn10" class="btn1" onclick="changeText10()">Buy Now</button>
+                        </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Gyming<h2>
+                        <div class="box-image" style="background-image: url('gym.avif');"></div>
+                        <p style="font-size:1rem; color: #6679f8 ;">See more</p>
+                        <div class="btnn">
+                            <button onclick="addToCart()" class="btn">Add to cart</button>
+                            <button id="buybtn0" class="btn1" onclick="changeText0()">Buy Now</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            <a href="#one">Back to top</a>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make money with us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>›See More Make Money with Us</a>
+            </ul>
+            <ul>
+
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo1">
+                ONMKT
+                <p class="log" style="text-align: center;"> <i class="fa-solid fa-arrow-trend-up"></i></p>
+                <p id="date"></p>
+            </div>
+
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Consumer Health Data Privacy Disclosure</a>
+                <a>your Ads Privacy Choices</a>
+            </div>
+            <div class="criteria">
+                <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
